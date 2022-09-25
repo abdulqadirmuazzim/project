@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    min-height: 100vh;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background: black;
+}
+
+
+video {
+    position: fixed;
+    object-fit: cover;
+    top: 0%;
+    min-height: 100vh;
+    width: 100%;
+    z-index: -22;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 10px;
+    margin-top: 0px;
+    background: linear-gradient(to right, rgba(237, 40, 247, 0.727), rgba(82, 229, 255, 0.727));
+    position: fixed;
+    perspective: 10px;
+    width: 100%;
+}
+
+header p {
+    font-weight: 700px;
+    text-decoration: none;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-shadow: 0 0 7px rgb(35, 193, 255);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    width: 110px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+nav li {
+    display: inline-block;
+    padding: 15px 30px;
+}
+
+nav li a {
+    transition: all 0.5s ease 0s;
+    color: white;
+}
+
+nav li a:hover {
+    color: black;
+    background: blueviolet;
+    padding: 6px 8px;
+    border-radius: 8px;
+}
+
+h1 {
+    text-shadow: 0 0 5px darkblue;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    font-weight: 700px;
+    z-index: 100000;
+    margin-top: 200px;
+}
+
+.two p {
+    background: wheat;
+    padding: 50px;
+}
+
+
+
+.vid {
+    padding: 50px 0px;
+    height: 700px;
+}
