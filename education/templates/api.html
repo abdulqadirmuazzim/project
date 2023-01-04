@@ -7,11 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Products</title>
     <link rel="stylesheet" href="../../static/style.css">
+    <link rel="stylesheet" href="../../static/som.css">
 </head>
 
 <body>
     <header>
-        <P>Logo</P>
+        <img src="../../static/logo.png" alt="logo">
         <nav>
             <input type="checkbox" id="check">
             <label for="check" class="butn">
@@ -27,9 +28,9 @@
             </ul>
         </nav>
     </header>
-
-    <img src="../../static/file.png" alt="">
-
+    <div class="nice">
+        <img src="../../static/file.png" alt="">
+    </div>
     <div class="tt">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic fugit nisi assumenda, dolorum minima officiis
             vero
@@ -135,12 +136,21 @@
             background: linear-gradient(steelblue, black);
         }
 
-        img {
+        .nice {
             height: 75%;
-            width: 100%;
             z-index: -1111;
+        }
+
+        .nice img {
+            width: 100%;
             position: fixed;
             display: flex;
+        }
+
+        @media (max-width: 750px) {
+            .nice {
+                height: 100vh;
+            }
         }
 
         .tt {
