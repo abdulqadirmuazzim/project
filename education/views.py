@@ -6,7 +6,7 @@ def home(req):
 
 
 def pro(req):
-    return render(req, 'products.html')
+    return render(req, 'product.html')
 
 
 def about(req):
