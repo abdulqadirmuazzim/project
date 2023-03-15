@@ -5,7 +5,7 @@ import time
 # Create your tests here.
 web = webdriver.Edge()
 
-web.get("file:///C:/Users/King_Abdul/project/education/templates/index.html")
+web.get("http://127.0.0.1:8000/products")
 time.sleep(3)
 var = web.find_element(By.LINK_TEXT, "Products")
 var.click()
