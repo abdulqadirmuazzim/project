@@ -6,17 +6,79 @@ header img {
 
 /* contact */
 .over {
-    position: absolute;
-    display: block;
+    position: relative;
+    display: grid;
     padding: 50px;
-    height: 50%;
-    width: 70%;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+    width: 100%;
+    float: unset;
 }
 
-.norm {
-    display: flex;
+
+.norm,
+.mail,
+.mess {
     position: relative;
-    height: 50px;
+    height: 100px;
     width: 100%;
     padding: 15px;
+}
+
+#te,
+#ma,
+#me {
+    background: transparent;
+    font-size: 20px;
+    height: 100%;
+    border: none;
+    width: 100%;
+    padding: 15px;
+    outline: none;
+    border-bottom: 2px solid black;
+    transition: all 0.5s ease 0.2s;
+}
+
+.norm label,
+.mess label,
+.mail label {
+    color: rgb(29, 3, 59);
+    position: absolute;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 200px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    left: 0;
+    top: 0;
+    transition: all 0.5 ease 0.2s;
+}
+
+#te:focus,
+#te:valid,
+#ma:focus,
+#ma:valid {
+    background: blue;
+    padding: 20px 15px;
+    margin-bottom: 10px;
+
+}
+
+input:focus~label,
+input:valid~label {
+
+    color: aliceblue;
+    padding: 0px;
+    transition: 0.5s linear;
+}
+
+#me:focus {
+    background: rgb(5, 24, 116);
+    transition: all 0.5s ease 0.3s;
+}
+
+#me:focus~label {
+    color: aliceblue;
+    padding: 0;
+    transition: all 0.4s ease 0.2s;
 }

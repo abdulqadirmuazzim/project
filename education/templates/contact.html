@@ -29,24 +29,29 @@
         </nav>
 
     </header>
-    <div class="over">
-        <h1>Contact us!</h1>
-        <!-- {% csrf_token %} -->
+    <form action="submit">
+        <div class="over">
+            <h1>Contact us!</h1>
+            <!-- {% csrf_token %} -->
 
-        <div class="norm">
-            <input type="text" required id="te">
-            <label for="te">Name</label>
-        </div>
+            <div class="norm">
+                <input type="text" required id="te">
+                <label for="te">Name</label>
+            </div>
 
-        <div class="mail">
-            <input type="email" id="ma" required>
-            <label for="ma">Email</label>
-        </div>
+            <div class="mail">
+                <input type="email" id="ma" required>
+                <label for="ma">Email</label>
+            </div>
 
-        <div class="mess">
-            <textarea id="me" cols="30" rows="10"></textarea>
-            <label for="me">Your Message</label>
-        </div>
+            <div class="mess">
+                <textarea id="me" cols="30" rows="10" required></textarea>
+                <label for="me">Your Message</label>
+            </div>
+            <div class="but">
+                <button>Send</button>
+            </div>
+    </form>
     </div>
     <style>
         body {
