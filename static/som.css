@@ -36,7 +36,7 @@ header img {
     width: 100%;
     padding: 15px;
     outline: none;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid rgb(240, 240, 240);
     transition: all 0.5s ease 0.2s;
 }
 
@@ -58,7 +58,7 @@ header img {
 #te:valid,
 #ma:focus,
 #ma:valid {
-    background: blue;
+    background: #29d9d3;
     padding: 20px 15px;
     margin-bottom: 10px;
 
@@ -73,7 +73,7 @@ input:valid~label {
 }
 
 #me:focus {
-    background: rgb(5, 24, 116);
+    background: #29d9d3;
     transition: all 0.5s ease 0.3s;
 }
 
@@ -81,4 +81,23 @@ input:valid~label {
     color: aliceblue;
     padding: 0;
     transition: all 0.4s ease 0.2s;
+}
+
+/* button */
+.but {
+    width: 100%;
+    height: 50px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.but button {
+    width: 50%;
+    height: 100%;
+    font-size: 30px;
+    background: #200485;
+    color: #20f5e3;
+    border: none;
+    outline: none;
+    border-radius: 20px;
 }
