@@ -8,7 +8,6 @@ def home(req):
 def pro(req):
     return render(req, 'product.html')
 
-
 def about(req):
     return render(req, 'about.html')
 
